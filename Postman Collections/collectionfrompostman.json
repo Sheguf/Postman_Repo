@@ -1,0 +1,124 @@
+{
+	"info": {
+		"_postman_id": "06c66392-aad8-4f63-96e5-b8963342d29f",
+		"name": "SoccerNet",
+		"description": "This is for testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "New Request",
+					"id": "cd6d49f7-7c35-4d49-bf48-bc048dfbfaae",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": {}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"eve.holt@reqres.in\",\r\n    \"password\": \"cityslicka\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}/api/login"
+					},
+					"response": []
+				}
+			],
+			"id": "85fca425-f642-4d54-a29e-8198dad2096d"
+		},
+		{
+			"name": "PATCH",
+			"item": [
+				{
+					"name": "PatchReq",
+					"id": "c7457f5b-43ec-4d2c-9c18-256d60b9386b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "QpwL5tke4Pnpja7X4"
+							}
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"morpheus\",\r\n    \"job\": \"zion resident\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}/api/users/2"
+					},
+					"response": []
+				},
+				{
+					"name": "PutDemo",
+					"id": "45136eb6-6737-4e16-a799-31343e932884",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": {
+								"password": "vineet",
+								"username": "vineet"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"morpheus\",\r\n    \"job\": \"zion resident\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://reqres.in/api/users/2"
+					},
+					"response": []
+				}
+			],
+			"id": "7c02188c-e79a-4894-8a50-56cee5af3dc9"
+		},
+		{
+			"name": "DeleteFolder",
+			"item": [
+				{
+					"name": "DeleteFolder",
+					"id": "a2b41d5e-030c-4f8c-8f6b-850e8aaf27db",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "https://reqres.in/api/users/2"
+					},
+					"response": []
+				}
+			],
+			"id": "66f3c186-6f06-4aed-b8d1-bac4c81ea3ba"
+		}
+	]
+}
